@@ -1,4 +1,6 @@
 import React from "react";
+import Button from 'react-bootstrap/Button'; 
+import {Table} from 'react-bootstrap'
 
 function HandleArray(){
 
@@ -33,28 +35,34 @@ function HandleArray(){
                 return  <h2 style={{ color : "black"}}> Name : {item} </h2>
                 })}
             </h1>
+            <Button varient = "primary"> Click Me</Button>
         </div>
         <div className="student">
             <h2>
 
-            <table border={1}> 
+            <Table striped border={1}> 
+            <tbody> 
+
+            
             <tr>
+                <td>S.No</td>
             <td>Name</td>
             <td>Email</td>
             <td>Contact</td>
             </tr>
           
-                {student.map((item)=>{
-                return ( 
-                    <tr>
-                      
+                {student.map((item ,i)=>
+                ( 
+                    <tr key={i}>
+                        <td>{i}</td>
                         <td>{item.name}</td>
                         <td>{item.email}</td>
                         <td>{item.contact}</td>
                     </tr>
                 )   
-            }) }
-            </table>
+            ) }
+            </tbody>
+            </Table>
             </h2>
 
             

@@ -5,7 +5,7 @@ import './App.css';
 // import UseEffectHook from './HooksInReact/UseEffectHook';
 import ForStyle from './HooksInReact/ForStyle';
 import Bootstarp from './HooksInReact/Bootstrap';
-import HandleArray from './HooksInReact/HandleArray';
+// import HandleArray from './HooksInReact/HandleArray';
 
 function App() {
 
@@ -37,7 +37,7 @@ function App() {
           </div>
 
           <div className="arrList">
-            <HandleArray/>
+            {/* <HandleArray/> */}
           </div>
           
         </div>
