@@ -64,9 +64,31 @@ function HandleArray(){
             </tbody>
             </Table>
             </h2>
-
-            
-            
+        </div>
+        <div className="table">
+            <Table>
+                <tbody>
+                    <tr>
+                        <td>S.No.</td>
+                        <td>Name</td>
+                        <td>Email</td>
+                        <td>Contact</td>
+                    </tr>
+                    {
+                        student.map((item,index)=>{
+                            return(
+                                <tr key={index}>
+                                    <td>{index}</td>
+                                    <td>{item.name}</td>
+                                    <td>{item.email}</td>
+                                    <td>{item.contact}</td>
+                                </tr>
+                                
+                            )
+                        })
+                    }
+                </tbody>
+            </Table>
         </div>
         </>
     )

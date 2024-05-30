@@ -1,0 +1,16 @@
+/* .main{
+    background-color: rgb(126, 136, 143);
+} */
+
+img{
+    width: 70%;
+    height: 80vh;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}

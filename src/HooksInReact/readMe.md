@@ -13,3 +13,7 @@ with condition we can use it easily
 npm install react-bootstrap bootstrap
 
 add or import bootstrap in index.js
+
+
+<!-- question :  why using map  instead of for loop in react -->
+<!-- Ans : In react return statement not support the for loop -->

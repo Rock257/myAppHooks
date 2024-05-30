@@ -3,9 +3,10 @@ import { useEffect, useState } from 'react';
 import './App.css';
 // import Basic from './HooksInReact/Basic';
 // import UseEffectHook from './HooksInReact/UseEffectHook';
-import ForStyle from './HooksInReact/ForStyle';
-import Bootstarp from './HooksInReact/Bootstrap';
-// import HandleArray from './HooksInReact/HandleArray';
+// import ForStyle from './HooksInReact/ForStyle';
+// import Bootstarp from './HooksInReact/Bootstrap';
+import HandleArray from './HooksInReact/HandleArray';
+// import Test from './HooksInReact/Test';
 
 function App() {
 
@@ -31,13 +32,17 @@ function App() {
 
           <div className="styleInReact">
             <div className="main">
-              <ForStyle/>
+              {/* <ForStyle/> */}
             </div>
-             <Bootstarp/>
+             {/* <Bootstarp/> */}
           </div>
 
           <div className="arrList">
-            {/* <HandleArray/> */}
+            <HandleArray/>
+          </div>
+          
+          <div className="arrList">
+            {/* <Test/> */}
           </div>
           
         </div>
