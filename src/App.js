@@ -8,10 +8,11 @@ import './App.css';
 // import HandleArray from './HooksInReact/HandleArray';
 // import Test from './HooksInReact/Test';
 // import  NestedArray from './HooksInReact/NestedArray';
-import ReuseCompo from './HooksInReact/ResuseCompo';
-import ReactFragments from './HooksInReact/ReactFragments';
-import LiftingStateUp from './Part2/LiftingStateUp';
-import PureCompo from '../src/Part2/PureCompo'
+// import ReuseCompo from './HooksInReact/ResuseCompo';
+// import ReactFragments from './HooksInReact/ReactFragments';
+// import LiftingStateUp from './Part2/LiftingStateUp';
+// import PureCompo from '../src/Part2/PureCompo'
+import UseMemoHook from './Part2/UseMemoHook';
 
 
 
@@ -80,7 +81,7 @@ function App() {
 
           <div className="arrList">
             {/* lets render user first */}
-            <h1>Lets  Try Reusablity Of The React Copmonent  </h1>
+            {/* <h1>Lets  Try Reusablity Of The React Copmonent  </h1> */}
             {user.map((item)=>{
               return(<> 
                {/* <ReuseCompo data ={item}/>  */}
@@ -94,11 +95,15 @@ function App() {
           </div>
 
           <div className="arrList">
-            <LiftingStateUp name = {userName}  setUserName = {setUserName} msg ={ParentToChild} val ={showCount}/>
+            {/* <LiftingStateUp name = {userName}  setUserName = {setUserName} msg ={ParentToChild} val ={showCount}/> */}
           </div>
 
           <div className="arrList">
-            <PureCompo/>
+            {/* <PureCompo/> */}
+          </div>
+
+          <div className="hooks">
+            <UseMemoHook/>
           </div>
 
           
