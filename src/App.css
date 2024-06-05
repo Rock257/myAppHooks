@@ -12,3 +12,8 @@
 span{
   font-size: 2rem;
 }
+
+input{
+  background-color: whitesmoke;
+  color: black;
+}
