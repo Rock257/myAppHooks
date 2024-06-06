@@ -16,7 +16,11 @@ import "./App.css";
 // import UseMemoHook from './Part2/UseMemoHook';
 // import RefInClass from './Part2/RefInClass';
 // import UseReHook from "./Part2/UseReHook";
-import ControlComponentm from "./Part2/ControlComponentm";
+// import ControlComponentm from "./Part2/ControlComponentm";
+// import UncontrolComponent from "./Part2/UncontrolComponent";
+
+import MyCounterApp from "./Part2/HOC/MyCounterApp";
+
 function App() {
   const [status, setStatus] = useState("Active");
 
@@ -91,13 +95,20 @@ function App() {
             <RefInClass/>
           </div> */}
 
-          {/* <div className="hooks">
-            <UseReHook />
-          </div> */}
+          <div className="hooks">
+            {/* <UseReHook /> */}
+          </div>
 
           <div className="hooks">
-            <ControlComponentm/>
+            {/* <ControlComponentm/> */}
           </div>
+          <div className="hooks">
+            {/* <UncontrolComponent/> */}
+          </div>
+          <div className="hooks">
+            <MyCounterApp/>
+          </div>
+          
           
           
         </div>
