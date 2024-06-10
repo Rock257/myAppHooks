@@ -19,7 +19,8 @@ import "./App.css";
 // import ControlComponentm from "./Part2/ControlComponentm";
 // import UncontrolComponent from "./Part2/UncontrolComponent";
 
-import MyCounterApp from "./Part2/HOC/MyCounterApp";
+// import MyCounterApp from "./Part2/HOC/MyCounterApp";
+import HOCTwo from "./Part2/HOC/HOCTwo";
 
 function App() {
   const [status, setStatus] = useState("Active");
@@ -106,9 +107,12 @@ function App() {
             {/* <UncontrolComponent/> */}
           </div>
           <div className="hooks">
-            <MyCounterApp/>
+            {/* <MyCounterApp/> */}
           </div>
           
+          <div className="hooks">
+            {<HOCTwo/>}
+          </div>
           
           
         </div>
