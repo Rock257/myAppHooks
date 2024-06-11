@@ -20,7 +20,11 @@ import "./App.css";
 // import UncontrolComponent from "./Part2/UncontrolComponent";
 
 // import MyCounterApp from "./Part2/HOC/MyCounterApp";
-import HOCTwo from "./Part2/HOC/HOCTwo";
+// import HOCTwo from "./Part2/HOC/HOCTwo";
+import Nav from "./Part2/Routeing/ExampleTwo/Nav";
+
+
+// import MainRoute from "./Part2/Routeing/MainRoute";
 
 function App() {
   const [status, setStatus] = useState("Active");
@@ -111,7 +115,14 @@ function App() {
           </div>
           
           <div className="hooks">
-            {<HOCTwo/>}
+            {/* {<HOCTwo/>} */}
+          </div>
+
+          <div className="hooks">
+            {/* <MainRoute/> */}
+          </div>
+          <div className="hooks">
+            <Nav/>
           </div>
           
           
