@@ -21,7 +21,9 @@ import "./App.css";
 
 // import MyCounterApp from "./Part2/HOC/MyCounterApp";
 // import HOCTwo from "./Part2/HOC/HOCTwo";
-import Nav from "./Part2/Routeing/ExampleTwo/Nav";
+
+// import Nav from "./Part2/Routeing/ExampleTwo/Nav";
+import Error404 from "./Part2/Error404";
 
 
 // import MainRoute from "./Part2/Routeing/MainRoute";
@@ -122,8 +124,12 @@ function App() {
             {/* <MainRoute/> */}
           </div>
           <div className="hooks">
-            <Nav/>
+            {/* <Nav/> */}
           </div>
+          <div className="hooks">
+            {<Error404/>}
+          </div>
+          
           
           
         </div>

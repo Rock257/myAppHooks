@@ -8,15 +8,11 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 function Nav() {
   return (
     <>
-      <div className="myapp"tyle={{display :"flex", flexDirection :'column'}}>
-        <div className="navbar" style={{display :"flex", flexDirection :'row', gap:'1.5rem', justifyContent :'center', alignItems:"center", fontSize:'2rem',textDecoration :'none', marginTop :'1.5rem' }}>
-          {/* <h1>Navbar</h1>
-                <Home/>
-                <About/>
-                <Contact/>
-                 */}
+      <div className="myapp"tyle={{display :"flex", flexDirection :'column' ,fontSize:'2rem'}}>
+        <div className="navbar">
           <Router>
-            <Link to="/home" style={{ textDecoration: "none" }}>
+            <div className="link" style={{display :"flex",gap:'1.5rem', justifyContent :'center', alignItems:"center", fontSize:'2rem',textDecoration :'none', marginTop :'1.5rem' }}> 
+                <Link to="/home" style={{ textDecoration: "none"}}>
               Home
             </Link>
             <br />
@@ -28,6 +24,8 @@ function Nav() {
             <Link to="/contact" style={{ textDecoration: "none" }}>
               Contact
             </Link>
+            </div>
+            
             <div className="content">
                 <Routes>
                 <Route path="/home" element={<Home/>}></Route>
