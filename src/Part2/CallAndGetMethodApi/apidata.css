@@ -3,3 +3,9 @@
     align-items: center;
     justify-content: center;
 }
+
+.user-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
