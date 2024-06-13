@@ -22,11 +22,14 @@ import "./App.css";
 // import MyCounterApp from "./Part2/HOC/MyCounterApp";
 // import HOCTwo from "./Part2/HOC/HOCTwo";
 
+
 // import Nav from "./Part2/Routeing/ExampleTwo/Nav";
-import Error404 from "./Part2/Error404";
-
-
+// import Error404 from "./Part2/Routeing/ExampleTwo/Error404";
 // import MainRoute from "./Part2/Routeing/MainRoute";
+// import DynRouting from "./Part2/Routeing/DynamicRouting/DynRouting";
+
+import ApiApp from "./Part2/CallAndGetMethodApi/ApiApp";
+
 
 function App() {
   const [status, setStatus] = useState("Active");
@@ -127,10 +130,16 @@ function App() {
             {/* <Nav/> */}
           </div>
           <div className="hooks">
-            {<Error404/>}
+            {/* {<Error404/>} */}
           </div>
           
-          
+          <div className="hooks">
+            {/* <DynRouting/> */}
+          </div>
+
+          <div className="hooks">
+            <ApiApp/>
+          </div>
           
         </div>
       </header>

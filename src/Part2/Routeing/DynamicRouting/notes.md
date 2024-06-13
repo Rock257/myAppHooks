@@ -1,0 +1,1 @@
+Dynamic Routing : used when the no. of route is not defined 

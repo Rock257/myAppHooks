@@ -7,8 +7,9 @@ export default function Error404() {
       <Router>
         <Link to="/home" style={{textDecoration:'none', margin:'1rem'}}>Home</Link>
         <Link to="/about" style={{textDecoration:'none', margin:'1rem'}}>About</Link>
-
         <Link to="/contact" style={{textDecoration:'none' ,margin:'1rem'}}>Contact</Link>
+
+        {/*if we use anchor tag instead of link than it will be same but it reload the page which not allowed in SPA  */}
         
         <div className="" style={{marginTop:'2rem', padding:'1rem' }}>
 
