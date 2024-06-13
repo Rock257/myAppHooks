@@ -7,28 +7,25 @@ import { Table } from "react-bootstrap";
 
 export default function ApiApp() {
   const [userData, setUserData] = useState([]);
-  const [post ,setPost] =  useState([])
+  const [post, setPost] = useState([]);
 
   useEffect(() => {
-
     fetch("https://jsonplaceholder.typicode.com/users").then((result) => {
       result.json(result).then((res) => {
         console.log(res);
         setUserData(res);
       });
     });
-
   }, []);
 
-  useEffect(()=>{
-    
+  useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts").then((results) => {
       results.json(results).then((responce) => {
         console.log(responce);
         setPost(responce);
       });
     });
-  },[])
+  }, []);
 
   // useEffect(() => {
   //   fetch("https://jsonplaceholder.typicode.com/todos")
@@ -68,9 +65,9 @@ export default function ApiApp() {
           </tbody>
         </table>
       </div>
-      <h1>User  Table</h1>
+      <h1>User Table</h1>
       <div className="user-table">
-        <Table border='1'  id="userTable">
+        {/* <Table border='1'  id="userTable">
           <tbody>
             <tr>
               
@@ -88,12 +85,29 @@ export default function ApiApp() {
                     <td>{item.title}</td>
                     <td>{item.body}</td>
                   </tr>
+
                 )
               })
             }
           </tbody>
-        </Table>
+        </Table> */}
       </div>
+      {post.map((item)=>{
+        return(
+
+           <div className="data"style={{display:"flex", gap:'1rem' ,alignItems:'center', justifyContent: '1rem'}}>
+        <div className="a">{item.id}</div>
+        <br />
+        <div className="b">
+          <h1>{item.title}</h1>
+          <p>{item.body}</p>
+        </div>
+      </div>
+        )
+      })
+       
+      }
+    
     </>
   );
 }
