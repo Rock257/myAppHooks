@@ -29,7 +29,8 @@ import "./App.css";
 // import DynRouting from "./Part2/Routeing/DynamicRouting/DynRouting";
 
 // import ApiApp from "./Part2/CallAndGetMethodApi/ApiApp";
-import MethodPost from "./Part2/Postman/MethodPost";
+// import MethodPost from "./Part2/Postman/MethodPost";
+import NoteState from "./Part2/Context/appfile/NoteState";
 
 
 function App() {
@@ -147,9 +148,12 @@ function App() {
           </div>
           
           <div className="hooks">
-            <MethodPost/>
+            {/* <MethodPost/> */}
           </div>
           
+          <div className="hooks">
+            {<NoteState/>}
+          </div>
         </div>
       </header>
     </div>
